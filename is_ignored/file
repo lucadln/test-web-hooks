@@ -3,3 +3,42 @@ asdsdsadas
 asdsadasasdsaas
 
 add new
+
+# MAIN CDist server, on atk-evo-mdata-1
+entry_name      = CDist.CDist_main_evomdata1
+hosts           = atk-evo-mdata-1
+cardinality     = *
+start_time      = 06:45:00
+end_time        = 06:40:00
+weekend_run     = yes
+holiday_run     = yes
+application     = run_main_evomdata1
+arguments       =
+odir            = mdata-core-PROD_20191230/cdist/main
+wdir            = mdata-core-PROD_20200415/cdist/main
+
+# MEGA CDist server, on atk-evo-mdata-1
+entry_name      = CDist.CDist_mega_evomdata1
+hosts           = atk-evo-mdata-1
+cardinality     = *
+start_time      = 06:55:00
+end_time        = 06:50:00
+weekend_run     = yes
+holiday_run     = yes
+application     = run_mega_evomdata1
+arguments       =
+odir            = mdata-core-PROD_20191230/cdist/mega
+wdir            = mdata-core-PROD_20200415/cdist/mega
+
+# STATIC CDist server, on atk-evo-mdata-1
+entry_name      = CDist.CDist_static_evomdata1
+hosts           = atk-evo-mdata-1
+cardinality     = *
+start_time      = 06:30:00
+end_time        = 06:29:00
+weekend_run     = yes
+holiday_run     = yes
+application     = run_static_evomdata1
+arguments       =
+odir            = mdata-core-PROD_20191210/cdist/static
+wdir            = mdata-core-PROD_20191210-PATCH-1/cdist/static
